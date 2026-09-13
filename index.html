@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-    <title>My Portfolio</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyani | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <h2>My Portfolio</h2>
-
-            <ul>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="logo" href="#home">K<span>.</span></a>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -23,66 +24,55 @@
         </nav>
     </header>
 
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Hello, I am</p>
+                <h1>Kalyani<br><em>Gadhe.</em></h1>
+                <p class="intro">A computer science student building thoughtful, welcoming experiences for the web.</p>
+                <a href="#contact" class="button">Let's talk <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-art" aria-label="Decorative portrait placeholder">
+                <div class="portrait">KG</div>
+                <p class="art-note">Curious mind<br>Creative builder</p>
+            </div>
+        </section>
 
-    <section id="home" class="hero">
+        <section id="about" class="content-section about container">
+            <p class="section-label">01 / About me</p>
+            <div>
+                <h2>Making ideas<br><em>feel simple.</em></h2>
+                <p>I am a BSc Computer Science student who enjoys turning ideas into clear, useful websites. I am interested in web development, programming, and the small details that make a digital experience feel special.</p>
+            </div>
+        </section>
 
-        <div>
-            <h1>Hello, I'm Kalyani </h1>
+        <section id="skills" class="content-section skills container">
+            <p class="section-label">02 / What I use</p>
+            <div class="skills-content">
+                <h2>A growing<br><em>toolkit.</em></h2>
+                <div class="skills-list">
+                    <div class="skill"><span>01</span> HTML & CSS</div>
+                    <div class="skill"><span>02</span> JavaScript</div>
+                    <div class="skill"><span>03</span> Python</div>
+                    <div class="skill"><span>04</span> Git & GitHub</div>
+                </div>
+            </div>
+        </section>
 
-            <p>
-                BSC Computer Science Student & Web Developer
-            </p>
+        <section id="contact" class="contact-section">
+            <div class="container contact-content">
+                <p class="section-label">03 / Get in touch</p>
+                <h2>Have an idea?<br><em>Let's make it real.</em></h2>
+                <a class="contact-link" href="mailto:example@gmail.com">example@gmail.com <span aria-hidden="true">↗</span></a>
+                <a class="github-link" href="https://github.com/KalyaniGadhe45">github.com/KalyaniGadhe45</a>
+            </div>
+        </section>
+    </main>
 
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-
-    </section>
-
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Computer Science student interested in web development, programming and creating creative websites.
-        </p>
-
-    </section>
-
-
-    <section id="skills">
-
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">Git & GitHub</div>
-
-        </div>
-
-    </section>
-
-
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>Email: example@gmail.com</p>
-        <p>GitHub: github.com/KalyaniGadhe45</p>
-
-    </section>
-
-
-    <footer>
-
-        <p>© 2026 My Portfolio. All Rights Reserved.</p>
-
+    <footer class="footer">
+        <p>© 2026 Kalyani Gadhe</p>
+        <p>Designed & built with care.</p>
     </footer>
-
 </body>
 
 </html>
